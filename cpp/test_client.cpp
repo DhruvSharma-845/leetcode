@@ -4,7 +4,8 @@
 //#include "increasing_decreasing_string.h"
 //#include "minimum_subsequence_in_non_increasing_order.h"
 //#include "widest_area_between_two_points.h"
-#include "intersection_of_two_arrays_II.h"
+//#include "intersection_of_two_arrays_II.h"
+#include "maximum_number_of_coins.h"
 
 int main() {
     Solution solution;
@@ -22,8 +23,11 @@ int main() {
     };
     std::cout << solution.maxWidthOfVerticalArea(v) << std::endl;*/
 
-    std::vector<int> v1{1,2,2,1};
+    /*std::vector<int> v1{1,2,2,1};
     std::vector<int> v2{2,2};
     std::vector<int> res = solution.intersect(v1, v2);
-    std::copy(res.begin(), res.end(), std::ostream_iterator<int>(std::cout, " "));
+    std::copy(res.begin(), res.end(), std::ostream_iterator<int>(std::cout, " "));*/
+
+    std::vector<int> v{9,8,7,6,5,1,2,3,4};
+    std::cout << solution.maxCoins(v) << std::endl;
 }
