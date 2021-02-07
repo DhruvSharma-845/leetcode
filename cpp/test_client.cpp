@@ -7,7 +7,8 @@
 //#include "widest_area_between_two_points.h"
 //#include "intersection_of_two_arrays_II.h"
 //#include "maximum_number_of_coins.h"
-#include "k_closest_points_to_origin.h"
+//#include "k_closest_points_to_origin.h"
+#include "rearrange_words_in_sentence.h"
 
 int main() {
     Solution solution;
@@ -33,7 +34,7 @@ int main() {
     /*std::vector<int> v{9,8,7,6,5,1,2,3,4};
     std::cout << solution.maxCoins(v) << std::endl;*/
 
-    std::vector<std::vector<int>> points{
+    /*std::vector<std::vector<int>> points{
         {1,3}, {-2,2}
     };
     std::vector<std::vector<int>> kClosestPts = solution.kClosest(points, 1);
@@ -42,5 +43,7 @@ int main() {
             std::cout << coord << " ";
         }
         std::cout << "\n";
-    }
+    }*/
+    std::string res = solution.arrangeWords("Jlhvvd wfwnphmxoa qcuucx qsvqskq cqwfypww dyphntfz hkbwx xmwohi qvzegb ubogo sbdfmnyeim tuqppyipb llwzeug hrsaebveez aszqnvruhr xqpqd ipwbapd mlghuuwvec xpefyglstj dkvhhgecd kry");
+    std::cout << res << std::endl;
 }
