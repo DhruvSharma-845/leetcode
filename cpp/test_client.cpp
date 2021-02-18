@@ -8,7 +8,9 @@
 //#include "intersection_of_two_arrays_II.h"
 //#include "maximum_number_of_coins.h"
 //#include "k_closest_points_to_origin.h"
-#include "rearrange_words_in_sentence.h"
+//#include "rearrange_words_in_sentence.h"
+//#include "sell_diminishing_valued_colored_balls.h"
+#include "remove_covered_intervals.h"
 
 int main() {
     Solution solution;
@@ -44,6 +46,21 @@ int main() {
         }
         std::cout << "\n";
     }*/
-    std::string res = solution.arrangeWords("Jlhvvd wfwnphmxoa qcuucx qsvqskq cqwfypww dyphntfz hkbwx xmwohi qvzegb ubogo sbdfmnyeim tuqppyipb llwzeug hrsaebveez aszqnvruhr xqpqd ipwbapd mlghuuwvec xpefyglstj dkvhhgecd kry");
-    std::cout << res << std::endl;
+    /*std::string res = solution.arrangeWords("Jlhvvd wfwnphmxoa qcuucx qsvqskq cqwfypww dyphntfz hkbwx xmwohi qvzegb ubogo sbdfmnyeim tuqppyipb llwzeug hrsaebveez aszqnvruhr xqpqd ipwbapd mlghuuwvec xpefyglstj dkvhhgecd kry");
+    std::cout << res << std::endl;*/
+
+    /*std::vector<int> v;
+    //v.push_back(1000000000);
+    v.push_back(2);
+    v.push_back(5);
+    v.push_back(8);
+    v.push_back(4);
+    v.push_back(6);
+    v.push_back(10);
+    std::cout << solution.maxProfit(v, 4) << std::endl;*/
+
+    std::vector<std::vector<int>> intervals{
+        {1,4}, {2,3}
+    };
+    std::cout << solution.removeCoveredIntervals(intervals) << std::endl;
 }
