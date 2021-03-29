@@ -10,7 +10,8 @@
 //#include "k_closest_points_to_origin.h"
 //#include "rearrange_words_in_sentence.h"
 //#include "sell_diminishing_valued_colored_balls.h"
-#include "remove_covered_intervals.h"
+//#include "remove_covered_intervals.h"
+#include "reveal-cards-in-increasing-order.h"
 
 int main() {
     Solution solution;
@@ -59,8 +60,12 @@ int main() {
     v.push_back(10);
     std::cout << solution.maxProfit(v, 4) << std::endl;*/
 
-    std::vector<std::vector<int>> intervals{
+    /*std::vector<std::vector<int>> intervals{
         {1,4}, {2,3}
     };
-    std::cout << solution.removeCoveredIntervals(intervals) << std::endl;
+    std::cout << solution.removeCoveredIntervals(intervals) << std::endl;*/
+
+    std::vector<int> deck{17,13,11,2,3,5,7};
+    std::vector<int> finalDeck = solution.deckRevealedIncreasing(deck);
+    std::copy(finalDeck.begin(), finalDeck.end(), std::ostream_iterator<int>(std::cout));
 }
