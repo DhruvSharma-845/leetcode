@@ -11,7 +11,8 @@
 //#include "rearrange_words_in_sentence.h"
 //#include "sell_diminishing_valued_colored_balls.h"
 //#include "remove_covered_intervals.h"
-#include "reveal-cards-in-increasing-order.h"
+//#include "reveal-cards-in-increasing-order.h"
+#include "binary_search_tree_to_greater_sum_tree.h"
 
 int main() {
     Solution solution;
@@ -65,7 +66,21 @@ int main() {
     };
     std::cout << solution.removeCoveredIntervals(intervals) << std::endl;*/
 
-    std::vector<int> deck{17,13,11,2,3,5,7};
+    /*std::vector<int> deck{17,13,11,2,3,5,7};
     std::vector<int> finalDeck = solution.deckRevealedIncreasing(deck);
-    std::copy(finalDeck.begin(), finalDeck.end(), std::ostream_iterator<int>(std::cout));
+    std::copy(finalDeck.begin(), finalDeck.end(), std::ostream_iterator<int>(std::cout));*/
+
+    TreeNode* rll = new TreeNode(0);
+    TreeNode* rlr = new TreeNode(2);
+    TreeNode* rl = new TreeNode(1, rll, rlr);
+
+    TreeNode* rrl = new TreeNode(5);
+    TreeNode* rrr = new TreeNode(7);
+    TreeNode* rr = new TreeNode(6, rrl, rrr);
+    TreeNode* root = new TreeNode(4, rl, rr);
+
+    inorderTraversal(root);
+    TreeNode* rootFinal = solution.bstToGst(root);
+    std::cout << "After conversion:" << std::endl;
+    inorderTraversal(root);
 }
