@@ -12,7 +12,8 @@
 //#include "sell_diminishing_valued_colored_balls.h"
 //#include "remove_covered_intervals.h"
 //#include "reveal-cards-in-increasing-order.h"
-#include "binary_search_tree_to_greater_sum_tree.h"
+//#include "binary_search_tree_to_greater_sum_tree.h"
+#include "number_of_provinces.h"
 
 int main() {
     Solution solution;
@@ -70,7 +71,7 @@ int main() {
     std::vector<int> finalDeck = solution.deckRevealedIncreasing(deck);
     std::copy(finalDeck.begin(), finalDeck.end(), std::ostream_iterator<int>(std::cout));*/
 
-    TreeNode* rll = new TreeNode(0);
+    /*TreeNode* rll = new TreeNode(0);
     TreeNode* rlr = new TreeNode(2);
     TreeNode* rl = new TreeNode(1, rll, rlr);
 
@@ -82,5 +83,8 @@ int main() {
     inorderTraversal(root);
     TreeNode* rootFinal = solution.bstToGst(root);
     std::cout << "After conversion:" << std::endl;
-    inorderTraversal(root);
+    inorderTraversal(root);*/
+
+    std::vector<std::vector<int>> cities{{1,0,0}, {0,1,0}, {0,0,1}};
+    std::cout << solution.findCircleNum(cities) << std::endl;
 }
