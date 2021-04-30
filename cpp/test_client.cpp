@@ -13,7 +13,8 @@
 //#include "remove_covered_intervals.h"
 //#include "reveal-cards-in-increasing-order.h"
 //#include "binary_search_tree_to_greater_sum_tree.h"
-#include "number_of_provinces.h"
+//#include "number_of_provinces.h"
+#include "score_of_parentheses.h"
 
 int main() {
     Solution solution;
@@ -85,6 +86,8 @@ int main() {
     std::cout << "After conversion:" << std::endl;
     inorderTraversal(root);*/
 
-    std::vector<std::vector<int>> cities{{1,0,0}, {0,1,0}, {0,0,1}};
-    std::cout << solution.findCircleNum(cities) << std::endl;
+    /*std::vector<std::vector<int>> cities{{1,0,0}, {0,1,0}, {0,0,1}};
+    std::cout << solution.findCircleNum(cities) << std::endl;*/
+
+    std::cout << solution.scoreOfParentheses("(()(()))") << std::endl;
 }
