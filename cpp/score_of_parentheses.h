@@ -5,7 +5,6 @@
 class Solution {
 public:
     int scoreOfParentheses(const std::string& S) {
-        //std::stack<char> st;
         int finalVal = 0;
         int depth = 0;
         for(auto i = 0; i < S.length(); ++i) {
