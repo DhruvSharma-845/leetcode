@@ -15,7 +15,8 @@
 //#include "binary_search_tree_to_greater_sum_tree.h"
 //#include "number_of_provinces.h"
 //#include "score_of_parentheses.h"
-#include "compare_strings_frequency_smallest_character.h"
+//#include "compare_strings_frequency_smallest_character.h"
+#include "minimum_limit_of_balls_in_bag.h"
 
 int main() {
     Solution solution;
@@ -92,8 +93,11 @@ int main() {
 
     //std::cout << solution.scoreOfParentheses("(()(()))") << std::endl;
 
-    std::vector<std::string> words{"a","aa","aaa","aaaa"};
+    /*std::vector<std::string> words{"a","aa","aaa","aaaa"};
     std::vector<std::string> queries{"bbb","cc"};
     std::vector <int> result = solution.numSmallerByFrequency(queries, words);
-    std::copy(result.begin(), result.end(), std::ostream_iterator<int>(std::cout, " "));
+    std::copy(result.begin(), result.end(), std::ostream_iterator<int>(std::cout, " "));*/
+
+    std::vector<int> nums{7,17};
+    std::cout << solution.minimumSize(nums, 2) << std::endl;
 }
