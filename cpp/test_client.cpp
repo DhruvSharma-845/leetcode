@@ -16,7 +16,8 @@
 //#include "number_of_provinces.h"
 //#include "score_of_parentheses.h"
 //#include "compare_strings_frequency_smallest_character.h"
-#include "minimum_limit_of_balls_in_bag.h"
+//#include "minimum_limit_of_balls_in_bag.h"
+#include "most_competitive_subsequence.h"
 
 int main() {
     Solution solution;
@@ -98,6 +99,9 @@ int main() {
     std::vector <int> result = solution.numSmallerByFrequency(queries, words);
     std::copy(result.begin(), result.end(), std::ostream_iterator<int>(std::cout, " "));*/
 
-    std::vector<int> nums{7,17};
-    std::cout << solution.minimumSize(nums, 2) << std::endl;
+    /*std::vector<int> nums{7,17};
+    std::cout << solution.minimumSize(nums, 2) << std::endl;*/
+    std::vector<int> v{2,4,3,3,5,4,9,6};
+    std::vector<int> res = solution.mostCompetitive(v, 4);
+    std::copy(res.begin(), res.end(), std::ostream_iterator<int>(std::cout, " "));
 }
