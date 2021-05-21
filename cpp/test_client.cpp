@@ -18,7 +18,8 @@
 //#include "compare_strings_frequency_smallest_character.h"
 //#include "minimum_limit_of_balls_in_bag.h"
 //#include "most_competitive_subsequence.h"
-#include "valid_number.h"
+//#include "valid_number.h"
+#include "maximum_area_of_piece_of_cake.h"
 
 int main() {
     Solution solution;
@@ -107,10 +108,13 @@ int main() {
     std::vector<int> res = solution.mostCompetitive(v, 4);
     std::copy(res.begin(), res.end(), std::ostream_iterator<int>(std::cout, " "));*/
 
-    if(solution.isNumber("4e+") == true) {
+    /*if(solution.isNumber("4e+") == true) {
         std::cout << "Valid Number." << std::endl;
     }
     else {
         std::cout << "Invalid Number!!!" << std::endl;
-    }
+    }*/
+    std::vector<int> hCuts{3, 1};
+    std::vector<int> vCuts{1};
+    std::cout << solution.maxArea(5, 4, hCuts, vCuts) << std::endl;
 }
