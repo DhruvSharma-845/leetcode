@@ -20,7 +20,9 @@
 //#include "most_competitive_subsequence.h"
 //#include "valid_number.h"
 //#include "maximum_area_of_piece_of_cake.h"
-#include "string_break_another_string.h"
+//#include "string_break_another_string.h"
+//#include "house_robber.h"
+#include "nim_game.h"
 
 int main() {
     Solution solution;
@@ -119,12 +121,22 @@ int main() {
     std::vector<int> vCuts{1};
     std::cout << solution.maxArea(5, 4, hCuts, vCuts) << std::endl;*/
 
-    std::string s1{"leetcodee"};
+    /*std::string s1{"leetcodee"};
     std::string s2{"interview"};
     if(solution.checkIfCanBreak(s1, s2) == true) {
         std::cout << "Breakable!!!" << std::endl;
     }
     else {
         std::cout << "NotBreakable..." << std::endl;
+    }*/
+
+    /*std::vector<int> v{};
+    std::cout << solution.rob(v) << std::endl;*/
+
+    if(solution.canWinNim(5) == false) {
+        std::cout << "We cannot win!" << std::endl;
+    }
+    else {
+        std::cout << "We can win." << std::endl;
     }
 }
