@@ -22,10 +22,11 @@
 //#include "maximum_area_of_piece_of_cake.h"
 //#include "string_break_another_string.h"
 //#include "house_robber.h"
-#include "nim_game.h"
+//#include "nim_game.h"
+#include "data_stream_disjoint_intervals.h"
 
 int main() {
-    Solution solution;
+    //Solution solution;
     //std::vector<int> v{4,5,6,7,0,2,1,3};
     //std::cout << solution.restoreString("codeleet", v) << std::endl;
     //std::string s = "leetcode";
@@ -133,10 +134,20 @@ int main() {
     /*std::vector<int> v{};
     std::cout << solution.rob(v) << std::endl;*/
 
-    if(solution.canWinNim(5) == false) {
+    /*if(solution.canWinNim(5) == false) {
         std::cout << "We cannot win!" << std::endl;
     }
     else {
         std::cout << "We can win." << std::endl;
+    }*/
+
+    SummaryRanges sr;
+    sr.addNum(1);
+    sr.addNum(3);
+    sr.addNum(7);
+    sr.addNum(2);
+    std::vector<std::vector<int>> res = sr.getIntervals();
+    for(const auto& v: res) {
+        std::cout << v[0] << " -> " << v[1] << std::endl;
     }
 }
