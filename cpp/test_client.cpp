@@ -9,7 +9,7 @@
 //#include "maximum_number_of_coins.h"
 //#include "k_closest_points_to_origin.h"
 //#include "rearrange_words_in_sentence.h"
-#include "sell_diminishing_valued_colored_balls.h"
+//#include "sell_diminishing_valued_colored_balls.h"
 //#include "remove_covered_intervals.h"
 //#include "reveal-cards-in-increasing-order.h"
 //#include "binary_search_tree_to_greater_sum_tree.h"
@@ -24,7 +24,7 @@
 //#include "house_robber.h"
 //#include "nim_game.h"
 //#include "data_stream_disjoint_intervals.h"
-//#include "cheapest_flights.h"
+#include "cheapest_flights.h"
 
 int main() {
     Solution solution;
@@ -63,13 +63,13 @@ int main() {
     /*std::string res = solution.arrangeWords("Jlhvvd wfwnphmxoa qcuucx qsvqskq cqwfypww dyphntfz hkbwx xmwohi qvzegb ubogo sbdfmnyeim tuqppyipb llwzeug hrsaebveez aszqnvruhr xqpqd ipwbapd mlghuuwvec xpefyglstj dkvhhgecd kry");
     std::cout << res << std::endl;*/
 
-    std::vector<int> v;
+    /*std::vector<int> v;
     v.push_back(2);
     v.push_back(8);
     v.push_back(4);
     v.push_back(6);
     v.push_back(10);
-    std::cout << solution.maxProfit(v, 20) << std::endl;
+    std::cout << solution.maxProfit(v, 20) << std::endl;*/
 
     /*std::vector<std::vector<int>> intervals{
         {1,4}, {2,3}
@@ -151,8 +151,8 @@ int main() {
     }*/
 
 
-    /*std::vector<std::vector<int>> fl{
+    std::vector<std::vector<int>> fl{
         {0,1,100}, {1,2,100}, {0,2,500}
     };
-    std::cout << solution.findCheapestPrice(3, fl, 0, 2, 0) << std::endl;*/
+    std::cout << solution.findCheapestPrice(3, fl, 0, 2, 0) << std::endl;
 }
