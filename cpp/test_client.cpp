@@ -24,7 +24,8 @@
 //#include "house_robber.h"
 //#include "nim_game.h"
 //#include "data_stream_disjoint_intervals.h"
-#include "cheapest_flights.h"
+//#include "cheapest_flights.h"
+#include "maximum_erasure_value.h"
 
 int main() {
     Solution solution;
@@ -151,8 +152,11 @@ int main() {
     }*/
 
 
-    std::vector<std::vector<int>> fl{
+    /*std::vector<std::vector<int>> fl{
         {0,1,100}, {1,2,100}, {0,2,500}
     };
-    std::cout << solution.findCheapestPrice(3, fl, 0, 2, 0) << std::endl;
+    std::cout << solution.findCheapestPrice(3, fl, 0, 2, 0) << std::endl;*/
+
+    std::vector<int> v{4,2,4,5,6};
+    std::cout << solution.maximumUniqueSubarray(v) << std::endl;
 }
