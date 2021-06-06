@@ -26,7 +26,8 @@
 //#include "data_stream_disjoint_intervals.h"
 //#include "cheapest_flights.h"
 //#include "maximum_erasure_value.h"
-#include "push_dominoes.h"
+//#include "push_dominoes.h"
+#include "word_break.h"
 
 int main() {
     Solution solution;
@@ -160,6 +161,16 @@ int main() {
 
     /*std::vector<int> v{4,2,4,5,6};
     std::cout << solution.maximumUniqueSubarray(v) << std::endl;*/
-    std::string s{".L.R...LR..L.."};
-    std::cout << solution.pushDominoes(s) << std::endl;
+    
+    /*std::string s{".L.R...LR..L.."};
+    std::cout << solution.pushDominoes(s) << std::endl;*/
+
+    std::vector<std::string> v{"cats","dog","sand","and","cat", "an"};
+    std::string s{"catsandog"};
+    if(solution.wordBreak(s, v)) {
+        std::cout << "Breakable" << std::endl;
+    }
+    else {
+        std::cout << "Not Breakable" << std::endl;
+    }
 }
