@@ -27,7 +27,8 @@
 //#include "cheapest_flights.h"
 //#include "maximum_erasure_value.h"
 //#include "push_dominoes.h"
-#include "word_break.h"
+//#include "word_break.h"
+#include "open_the_lock.h"
 
 int main() {
     Solution solution;
@@ -165,12 +166,16 @@ int main() {
     /*std::string s{".L.R...LR..L.."};
     std::cout << solution.pushDominoes(s) << std::endl;*/
 
-    std::vector<std::string> v{"cats","dog","sand","and","cat", "an"};
+    /*std::vector<std::string> v{"cats","dog","sand","and","cat", "an"};
     std::string s{"catsandog"};
     if(solution.wordBreak(s, v)) {
         std::cout << "Breakable" << std::endl;
     }
     else {
         std::cout << "Not Breakable" << std::endl;
-    }
+    }*/
+
+    std::vector<std::string> v{"8887","8889","8878","8898","8788","8988","7888","9888"};
+    std::string s{"8888"};
+    std::cout << solution.openLock(v, s) << std::endl;
 }
