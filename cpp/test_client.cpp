@@ -28,7 +28,9 @@
 //#include "maximum_erasure_value.h"
 //#include "push_dominoes.h"
 //#include "word_break.h"
-#include "open_the_lock.h"
+//#include "open_the_lock.h"
+//#include "reorganize_string.h"
+#include "beautiful_arrangement_II.h"
 
 int main() {
     Solution solution;
@@ -175,7 +177,13 @@ int main() {
         std::cout << "Not Breakable" << std::endl;
     }*/
 
-    std::vector<std::string> v{"8887","8889","8878","8898","8788","8988","7888","9888"};
+    /*std::vector<std::string> v{"8887","8889","8878","8898","8788","8988","7888","9888"};
     std::string s{"8888"};
-    std::cout << solution.openLock(v, s) << std::endl;
+    std::cout << solution.openLock(v, s) << std::endl;*/
+
+    /*std::string s{"aab"};
+    std::cout << solution.reorganizeString(s) << std::endl;*/
+
+    auto res = solution.constructArray(5, 3);
+    std::copy(res.begin(), res.end(), std::ostream_iterator<int>(std::cout, " "));
 }
