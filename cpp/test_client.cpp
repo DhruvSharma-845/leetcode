@@ -30,7 +30,8 @@
 //#include "word_break.h"
 //#include "open_the_lock.h"
 //#include "reorganize_string.h"
-#include "beautiful_arrangement_II.h"
+//#include "beautiful_arrangement_II.h"
+#include "remove_adjacent_duplicates_II.h"
 
 int main() {
     Solution solution;
@@ -184,6 +185,9 @@ int main() {
     /*std::string s{"aab"};
     std::cout << solution.reorganizeString(s) << std::endl;*/
 
-    auto res = solution.constructArray(5, 3);
-    std::copy(res.begin(), res.end(), std::ostream_iterator<int>(std::cout, " "));
+    /*auto res = solution.constructArray(5, 3);
+    std::copy(res.begin(), res.end(), std::ostream_iterator<int>(std::cout, " "));*/
+
+    std::string s{"deeedbbcccbdaa"};
+    std::cout << solution.removeDuplicates(s, 3) << std::endl;
 }
