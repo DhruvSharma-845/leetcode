@@ -31,8 +31,8 @@
 //#include "open_the_lock.h"
 //#include "reorganize_string.h"
 //#include "beautiful_arrangement_II.h"
-#include "remove_adjacent_duplicates_II.h"
-
+//#include "remove_adjacent_duplicates_II.h"
+#include "minimum_sideway_jumps.h"
 int main() {
     Solution solution;
     //std::vector<int> v{4,5,6,7,0,2,1,3};
@@ -188,6 +188,9 @@ int main() {
     /*auto res = solution.constructArray(5, 3);
     std::copy(res.begin(), res.end(), std::ostream_iterator<int>(std::cout, " "));*/
 
-    std::string s{"deeedbbcccbdaa"};
-    std::cout << solution.removeDuplicates(s, 3) << std::endl;
+    /*std::string s{"deeedbbcccbdaa"};
+    std::cout << solution.removeDuplicates(s, 3) << std::endl;*/
+
+    std::vector<int> obs{0,1,2,3,0};
+    std::cout << solution.minSideJumps(obs) << std::endl;
 }
