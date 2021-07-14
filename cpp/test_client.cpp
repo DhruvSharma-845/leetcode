@@ -32,7 +32,9 @@
 //#include "reorganize_string.h"
 //#include "beautiful_arrangement_II.h"
 //#include "remove_adjacent_duplicates_II.h"
-#include "minimum_sideway_jumps.h"
+//#include "minimum_sideway_jumps.h"
+#include "count_negative_in_sorted_matrix.h"
+
 int main() {
     Solution solution;
     //std::vector<int> v{4,5,6,7,0,2,1,3};
@@ -191,6 +193,16 @@ int main() {
     /*std::string s{"deeedbbcccbdaa"};
     std::cout << solution.removeDuplicates(s, 3) << std::endl;*/
 
-    std::vector<int> obs{0,1,2,3,0};
-    std::cout << solution.minSideJumps(obs) << std::endl;
+    /*std::vector<int> obs{0,1,2,3,0};
+    std::cout << solution.minSideJumps(obs) << std::endl;*/
+
+    std::vector<std::vector<int>> matrix{
+    /*    {4,3,2,-1},
+        {3,2,1,-1},
+        {1,1,-1,-2},
+        {-1,-1,-2,-3}*/
+        {-1, -1},
+        {-1, -2}
+    };
+    std::cout << solution.countNegatives(matrix) << std::endl;
 }
