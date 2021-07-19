@@ -33,7 +33,8 @@
 //#include "beautiful_arrangement_II.h"
 //#include "remove_adjacent_duplicates_II.h"
 //#include "minimum_sideway_jumps.h"
-#include "count_negative_in_sorted_matrix.h"
+//#include "count_negative_in_sorted_matrix.h"
+#include "insufficient_nodes_root_to_leaf_path.h"
 
 int main() {
     Solution solution;
@@ -196,13 +197,20 @@ int main() {
     /*std::vector<int> obs{0,1,2,3,0};
     std::cout << solution.minSideJumps(obs) << std::endl;*/
 
-    std::vector<std::vector<int>> matrix{
+    //std::vector<std::vector<int>> matrix{
     /*    {4,3,2,-1},
         {3,2,1,-1},
         {1,1,-1,-2},
         {-1,-1,-2,-3}*/
-        {-1, -1},
+    /*    {-1, -1},
         {-1, -2}
     };
-    std::cout << solution.countNegatives(matrix) << std::endl;
+    std::cout << solution.countNegatives(matrix) << std::endl;*/
+
+    TreeNode* root = new TreeNode(1);
+    root->left = new TreeNode(2);
+    root->right = new TreeNode(-2);
+
+    TreeNode* r = solution.sufficientSubset(root, 1);
+    std::cout << r->val << std::endl;
 }
