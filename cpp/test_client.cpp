@@ -34,7 +34,8 @@
 //#include "remove_adjacent_duplicates_II.h"
 //#include "minimum_sideway_jumps.h"
 //#include "count_negative_in_sorted_matrix.h"
-#include "insufficient_nodes_root_to_leaf_path.h"
+//#include "insufficient_nodes_root_to_leaf_path.h"
+#include "last_stone_weight.h"
 
 int main() {
     Solution solution;
@@ -207,10 +208,13 @@ int main() {
     };
     std::cout << solution.countNegatives(matrix) << std::endl;*/
 
-    TreeNode* root = new TreeNode(1);
+    /*TreeNode* root = new TreeNode(1);
     root->left = new TreeNode(2);
     root->right = new TreeNode(-2);
 
     TreeNode* r = solution.sufficientSubset(root, 1);
-    std::cout << r->val << std::endl;
+    std::cout << r->val << std::endl;*/
+
+    std::vector<int> v{2, 7, 4, 1, 8, 1};
+    std::cout << solution.lastStoneWeight(v) << std::endl;
 }
