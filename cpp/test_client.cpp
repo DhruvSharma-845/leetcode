@@ -35,7 +35,8 @@
 //#include "minimum_sideway_jumps.h"
 //#include "count_negative_in_sorted_matrix.h"
 //#include "insufficient_nodes_root_to_leaf_path.h"
-#include "last_stone_weight.h"
+//#include "last_stone_weight.h"
+#include "last_stone_weight_II.h"
 
 int main() {
     Solution solution;
@@ -215,6 +216,9 @@ int main() {
     TreeNode* r = solution.sufficientSubset(root, 1);
     std::cout << r->val << std::endl;*/
 
-    std::vector<int> v{2, 7, 4, 1, 8, 1};
-    std::cout << solution.lastStoneWeight(v) << std::endl;
+    /*std::vector<int> v{2, 7, 4, 1, 8, 1};
+    std::cout << solution.lastStoneWeight(v) << std::endl;*/
+
+    std::vector<int> v{2,7,4,1,8,1};
+    std::cout << solution.lastStoneWeightII(v) << std::endl;
 }
