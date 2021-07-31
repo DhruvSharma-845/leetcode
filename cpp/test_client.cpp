@@ -36,7 +36,8 @@
 //#include "count_negative_in_sorted_matrix.h"
 //#include "insufficient_nodes_root_to_leaf_path.h"
 //#include "last_stone_weight.h"
-#include "last_stone_weight_II.h"
+//#include "last_stone_weight_II.h"
+#include "count_number_of_teams.h"
 
 int main() {
     Solution solution;
@@ -219,6 +220,9 @@ int main() {
     /*std::vector<int> v{2, 7, 4, 1, 8, 1};
     std::cout << solution.lastStoneWeight(v) << std::endl;*/
 
-    std::vector<int> v{2,7,4,1,8,1};
-    std::cout << solution.lastStoneWeightII(v) << std::endl;
+    /*std::vector<int> v{2,7,4,1,8,1};
+    std::cout << solution.lastStoneWeightII(v) << std::endl;*/
+
+    std::vector<int> v{2,5,3,4,1};
+    std::cout << solution.numTeams(v) << std::endl;
 }
