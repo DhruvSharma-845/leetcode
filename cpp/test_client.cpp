@@ -37,7 +37,8 @@
 //#include "insufficient_nodes_root_to_leaf_path.h"
 //#include "last_stone_weight.h"
 //#include "last_stone_weight_II.h"
-#include "count_number_of_teams.h"
+//#include "count_number_of_teams.h"
+#include "count_servers_communicate.h"
 
 int main() {
     Solution solution;
@@ -223,6 +224,12 @@ int main() {
     /*std::vector<int> v{2,7,4,1,8,1};
     std::cout << solution.lastStoneWeightII(v) << std::endl;*/
 
-    std::vector<int> v{2,5,3,4,1};
-    std::cout << solution.numTeams(v) << std::endl;
+    /*std::vector<int> v{2,5,3,4,1};
+    std::cout << solution.numTeams(v) << std::endl;*/
+
+    std::vector<std::vector<int>> v{
+        {1,0},
+        {1,1}
+    };
+    std::cout << solution.countServers(v) << std::endl;
 }
