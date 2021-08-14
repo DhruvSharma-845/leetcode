@@ -38,7 +38,8 @@
 //#include "last_stone_weight.h"
 //#include "last_stone_weight_II.h"
 //#include "count_number_of_teams.h"
-#include "count_servers_communicate.h"
+//#include "count_servers_communicate.h"
+#include "uncrossed_lines.h"
 
 int main() {
     Solution solution;
@@ -227,9 +228,14 @@ int main() {
     /*std::vector<int> v{2,5,3,4,1};
     std::cout << solution.numTeams(v) << std::endl;*/
 
-    std::vector<std::vector<int>> v{
+    /*std::vector<std::vector<int>> v{
         {1,0},
         {1,1}
     };
-    std::cout << solution.countServers(v) << std::endl;
+    std::cout << solution.countServers(v) << std::endl;*/
+
+    std::vector<int> v1{1,4,2};
+    std::vector<int> v2{1,2,4};
+
+    std::cout << solution.maxUncrossedLines(v1, v2) << std::endl;
 }
