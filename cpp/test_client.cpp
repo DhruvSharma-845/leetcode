@@ -39,7 +39,8 @@
 //#include "last_stone_weight_II.h"
 //#include "count_number_of_teams.h"
 //#include "count_servers_communicate.h"
-#include "uncrossed_lines.h"
+//#include "uncrossed_lines.h"
+#include "longest_string_chain.h"
 
 int main() {
     Solution solution;
@@ -234,8 +235,11 @@ int main() {
     };
     std::cout << solution.countServers(v) << std::endl;*/
 
-    std::vector<int> v1{1,4,2};
+    /*std::vector<int> v1{1,4,2};
     std::vector<int> v2{1,2,4};
 
-    std::cout << solution.maxUncrossedLines(v1, v2) << std::endl;
+    std::cout << solution.maxUncrossedLines(v1, v2) << std::endl;*/
+
+    std::vector<std::string> words{"xbc","pcxbcf","xb","cxbc","pcxbc"};
+    std::cout << solution.longestStrChain(words) << std::endl;
 }
