@@ -40,7 +40,8 @@
 //#include "count_number_of_teams.h"
 //#include "count_servers_communicate.h"
 //#include "uncrossed_lines.h"
-#include "longest_string_chain.h"
+//#include "longest_string_chain.h"
+#include "container_with_most_water.h"
 
 int main() {
     Solution solution;
@@ -240,6 +241,9 @@ int main() {
 
     std::cout << solution.maxUncrossedLines(v1, v2) << std::endl;*/
 
-    std::vector<std::string> words{"xbc","pcxbcf","xb","cxbc","pcxbc"};
-    std::cout << solution.longestStrChain(words) << std::endl;
+    /*std::vector<std::string> words{"xbc","pcxbcf","xb","cxbc","pcxbc"};
+    std::cout << solution.longestStrChain(words) << std::endl;*/
+
+    std::vector<int> v{1,8,6,2,5,4,8,3,7};
+    std::cout << solution.maxArea(v) << std::endl;
 }
