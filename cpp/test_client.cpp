@@ -42,7 +42,8 @@
 //#include "uncrossed_lines.h"
 //#include "longest_string_chain.h"
 //#include "container_with_most_water.h"
-#include "rabbits_in_forest.h"
+//#include "rabbits_in_forest.h"
+#include "corporate_flight_bookings.h"
 
 int main() {
     Solution solution;
@@ -248,6 +249,14 @@ int main() {
     /*std::vector<int> v{1,8,6,2,5,4,8,3,7};
     std::cout << solution.maxArea(v) << std::endl;*/
 
-    std::vector<int> v{1,1,3,3};
-    std::cout << solution.numRabbits(v) << std::endl;
+    /*std::vector<int> v{1,1,3,3};
+    std::cout << solution.numRabbits(v) << std::endl;*/
+
+    std::vector<std::vector<int>> v{
+        {1,2,10},
+        {2,3,20},
+        {2,5,25}
+    };
+    std::vector<int> res = solution.corpFlightBookings(v, 5);
+    std::copy(res.begin(), res.end(), std::ostream_iterator<int>(std::cout, " "));
 }
