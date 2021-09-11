@@ -44,7 +44,8 @@
 //#include "container_with_most_water.h"
 //#include "rabbits_in_forest.h"
 //#include "corporate_flight_bookings.h"
-#include "broken_calculator.h"
+//#include "broken_calculator.h"
+#include "time_to_inform_all_employees.h"
 
 int main() {
     Solution solution;
@@ -261,5 +262,9 @@ int main() {
     std::vector<int> res = solution.corpFlightBookings(v, 5);
     std::copy(res.begin(), res.end(), std::ostream_iterator<int>(std::cout, " "));*/
 
-    std::cout << solution.brokenCalc(5, 12) << std::endl;
+    /*std::cout << solution.brokenCalc(5, 12) << std::endl;*/
+
+    std::vector<int> managers{-1,0,0,1,1,2,2,3,3,4,4,5,5,6,6};
+    std::vector<int> informTime{1,1,1,1,1,1,1,0,0,0,0,0,0,0,0};
+    std::cout << solution.numOfMinutes(15, 0, managers, informTime) << std::endl;
 }
