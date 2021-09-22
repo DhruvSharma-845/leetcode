@@ -46,7 +46,8 @@
 //#include "corporate_flight_bookings.h"
 //#include "broken_calculator.h"
 //#include "time_to_inform_all_employees.h"
-#include "divide_array_in_sets_of_k_consecutive_num.h"
+//#include "divide_array_in_sets_of_k_consecutive_num.h"
+#include "my_calendar_III.h"
 
 int main() {
     Solution solution;
@@ -269,11 +270,15 @@ int main() {
     std::vector<int> informTime{1,1,1,1,1,1,1,0,0,0,0,0,0,0,0};
     std::cout << solution.numOfMinutes(15, 0, managers, informTime) << std::endl;*/
 
-    std::vector<int> v{3,2,1,2,3,4,3,4,5,9,10,11};
+    /*std::vector<int> v{3,2,1,2,3,4,3,4,5,9,10,11};
     if(solution.isPossibleDivide(v, 3) == true) {
         std::cout << "Yes" << std::endl;
     }
     else {
         std::cout << "No" << std::endl;
-    }
+    }*/
+
+    std::cout << solution.book(10, 20) << std::endl;
+    std::cout << solution.book(50, 60) << std::endl;
+    std::cout << solution.book(5, 20) << std::endl;
 }
