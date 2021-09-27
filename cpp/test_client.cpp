@@ -47,7 +47,8 @@
 //#include "broken_calculator.h"
 //#include "time_to_inform_all_employees.h"
 //#include "divide_array_in_sets_of_k_consecutive_num.h"
-#include "my_calendar_III.h"
+//#include "my_calendar_III.h"
+#include "sliding_puzzle.h"
 
 int main() {
     Solution solution;
@@ -278,7 +279,13 @@ int main() {
         std::cout << "No" << std::endl;
     }*/
 
-    std::cout << solution.book(10, 20) << std::endl;
+    /*std::cout << solution.book(10, 20) << std::endl;
     std::cout << solution.book(50, 60) << std::endl;
-    std::cout << solution.book(5, 20) << std::endl;
+    std::cout << solution.book(5, 20) << std::endl;*/
+
+    std::vector<std::vector<int>> v{
+        {4,1,2}
+        ,{5,0,3}
+    };
+    std::cout << solution.slidingPuzzle(v) << std::endl;
 }
