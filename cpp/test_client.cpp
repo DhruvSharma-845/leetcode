@@ -48,7 +48,8 @@
 //#include "time_to_inform_all_employees.h"
 //#include "divide_array_in_sets_of_k_consecutive_num.h"
 //#include "my_calendar_III.h"
-#include "sliding_puzzle.h"
+//#include "sliding_puzzle.h"
+#include "pallindrome_partitioning_III.h"
 
 int main() {
     Solution solution;
@@ -283,9 +284,12 @@ int main() {
     std::cout << solution.book(50, 60) << std::endl;
     std::cout << solution.book(5, 20) << std::endl;*/
 
-    std::vector<std::vector<int>> v{
+    /*std::vector<std::vector<int>> v{
         {4,1,2}
         ,{5,0,3}
     };
-    std::cout << solution.slidingPuzzle(v) << std::endl;
+    std::cout << solution.slidingPuzzle(v) << std::endl;*/
+
+    std::string s{"leetcode"};
+    std::cout << solution.palindromePartition(s, 8) << std::endl;
 }
