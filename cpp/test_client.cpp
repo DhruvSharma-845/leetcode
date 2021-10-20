@@ -49,7 +49,8 @@
 //#include "divide_array_in_sets_of_k_consecutive_num.h"
 //#include "my_calendar_III.h"
 //#include "sliding_puzzle.h"
-#include "pallindrome_partitioning_III.h"
+//#include "pallindrome_partitioning_III.h"
+#include "remove_element_to_make_array_increasing.h"
 
 int main() {
     Solution solution;
@@ -290,6 +291,14 @@ int main() {
     };
     std::cout << solution.slidingPuzzle(v) << std::endl;*/
 
-    std::string s{"leetcode"};
-    std::cout << solution.palindromePartition(s, 8) << std::endl;
+    /*std::string s{"leetcode"};
+    std::cout << solution.palindromePartition(s, 8) << std::endl;*/
+
+    std::vector<int> v{1,2,10,5,7};
+    if(solution.canBeIncreasing(v)) {
+        std::cout << "Can be made increasing." << std::endl;
+    }  
+    else {
+        std::cout << "Cannot be made increasing!!!" << std::endl;
+    }
 }
