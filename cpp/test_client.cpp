@@ -51,7 +51,8 @@
 //#include "sliding_puzzle.h"
 //#include "pallindrome_partitioning_III.h"
 //#include "remove_element_to_make_array_increasing.h"
-#include "bulb_switcher_II.h"
+//#include "bulb_switcher_II.h"
+#include "number_of_burgers.h"
 
 int main() {
     Solution solution;
@@ -303,5 +304,8 @@ int main() {
         std::cout << "Cannot be made increasing!!!" << std::endl;
     }*/
 
-    std::cout << solution.flipLights(3, 1) << std::endl;
+    //std::cout << solution.flipLights(3, 1) << std::endl;
+
+    auto x = solution.numOfBurgers(16, 7);
+    std::copy(x.begin(), x.end(), std::ostream_iterator<int>(std::cout, " "));
 }
