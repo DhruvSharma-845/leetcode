@@ -52,7 +52,8 @@
 //#include "pallindrome_partitioning_III.h"
 //#include "remove_element_to_make_array_increasing.h"
 //#include "bulb_switcher_II.h"
-#include "number_of_burgers.h"
+//#include "number_of_burgers.h"
+#include "swim_in_rising_water.h"
 
 int main() {
     Solution solution;
@@ -306,6 +307,15 @@ int main() {
 
     //std::cout << solution.flipLights(3, 1) << std::endl;
 
-    auto x = solution.numOfBurgers(16, 7);
-    std::copy(x.begin(), x.end(), std::ostream_iterator<int>(std::cout, " "));
+    /*auto x = solution.numOfBurgers(16, 7);
+    std::copy(x.begin(), x.end(), std::ostream_iterator<int>(std::cout, " "));*/
+
+    std::vector<std::vector<int>> pool{
+        {0,1,2,3,4},
+        {24,23,22,21,5},
+        {12,13,14,15,16},
+        {11,17,18,19,20},
+        {10,9,8,7,6}
+    };
+    std::cout << solution.swimInWater(pool) << std::endl;
 }
