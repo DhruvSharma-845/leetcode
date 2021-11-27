@@ -54,7 +54,8 @@
 //#include "bulb_switcher_II.h"
 //#include "number_of_burgers.h"
 //#include "swim_in_rising_water.h"
-#include "two_keys_keyboard.h"
+//#include "two_keys_keyboard.h"
+#include "maximum_length_of_repeated_subarray.h"
 
 int main() {
     Solution solution;
@@ -320,6 +321,10 @@ int main() {
     };
     std::cout << solution.swimInWater(pool) << std::endl;*/
 
-    std::cout << solution.minSteps(3) << std::endl;
+    //std::cout << solution.minSteps(3) << std::endl;
+
+    std::vector<int> v{1,2,3,1,2};
+    std::vector<int> v1{1,2,1,2,3};
+    std::cout << solution.findLength(v, v1) << std::endl;
 
 }
