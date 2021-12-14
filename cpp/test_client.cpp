@@ -55,7 +55,8 @@
 //#include "number_of_burgers.h"
 //#include "swim_in_rising_water.h"
 //#include "two_keys_keyboard.h"
-#include "maximum_length_of_repeated_subarray.h"
+//#include "maximum_length_of_repeated_subarray.h"
+#include "avoid_flood_in_city.h"
 
 int main() {
     Solution solution;
@@ -323,8 +324,12 @@ int main() {
 
     //std::cout << solution.minSteps(3) << std::endl;
 
-    std::vector<int> v{1,2,3,1,2};
+    /*std::vector<int> v{1,2,3,1,2};
     std::vector<int> v1{1,2,1,2,3};
-    std::cout << solution.findLength(v, v1) << std::endl;
+    std::cout << solution.findLength(v, v1) << std::endl;*/
+
+    std::vector<int> v{1,2,0,1,3};
+    auto ans = solution.avoidFlood(v);
+    std::copy(ans.begin(), ans.end(), std::ostream_iterator<int>(std::cout, " "));
 
 }
