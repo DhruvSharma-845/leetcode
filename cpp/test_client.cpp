@@ -56,7 +56,8 @@
 //#include "swim_in_rising_water.h"
 //#include "two_keys_keyboard.h"
 //#include "maximum_length_of_repeated_subarray.h"
-#include "avoid_flood_in_city.h"
+//#include "avoid_flood_in_city.h"
+#include "buddy_strings.h"
 
 int main() {
     Solution solution;
@@ -328,8 +329,15 @@ int main() {
     std::vector<int> v1{1,2,1,2,3};
     std::cout << solution.findLength(v, v1) << std::endl;*/
 
-    std::vector<int> v{1,2,0,1,3};
+    /*std::vector<int> v{1,2,0,1,3};
     auto ans = solution.avoidFlood(v);
-    std::copy(ans.begin(), ans.end(), std::ostream_iterator<int>(std::cout, " "));
+    std::copy(ans.begin(), ans.end(), std::ostream_iterator<int>(std::cout, " "));*/
+
+    if(solution.buddyStrings("aa", "aa")) {
+        std::cout << "Buddy Strings!" << std::endl;
+    }
+    else {
+        std::cout << "Not buddy!!!" << std::endl;
+    }
 
 }
