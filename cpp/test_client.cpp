@@ -57,7 +57,8 @@
 //#include "two_keys_keyboard.h"
 //#include "maximum_length_of_repeated_subarray.h"
 //#include "avoid_flood_in_city.h"
-#include "buddy_strings.h"
+//#include "buddy_strings.h"
+#include "check_if_word_can_be_placed_in_crossword.h"
 
 int main() {
     Solution solution;
@@ -333,11 +334,22 @@ int main() {
     auto ans = solution.avoidFlood(v);
     std::copy(ans.begin(), ans.end(), std::ostream_iterator<int>(std::cout, " "));*/
 
-    if(solution.buddyStrings("aa", "aa")) {
+    /*if(solution.buddyStrings("aa", "aa")) {
         std::cout << "Buddy Strings!" << std::endl;
     }
     else {
         std::cout << "Not buddy!!!" << std::endl;
-    }
+    }*/
 
+    std::vector<std::vector<char>> board{
+        {' ', ' ', 'd'}, 
+        {' ', ' ', '#'}, 
+        {' ', 'c', 'b'}
+    };
+    if(solution.placeWordInCrossword(board, "abc")) {
+        std::cout << "Can be placed!" << std::endl;
+    }
+    else {
+        std::cout << "Cannot be placed!!!" << std::endl;
+    }
 }
