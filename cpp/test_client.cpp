@@ -58,7 +58,8 @@
 //#include "maximum_length_of_repeated_subarray.h"
 //#include "avoid_flood_in_city.h"
 //#include "buddy_strings.h"
-#include "check_if_word_can_be_placed_in_crossword.h"
+//#include "check_if_word_can_be_placed_in_crossword.h"
+#include "parallel_courses_III.h"
 
 int main() {
     Solution solution;
@@ -341,7 +342,7 @@ int main() {
         std::cout << "Not buddy!!!" << std::endl;
     }*/
 
-    std::vector<std::vector<char>> board{
+    /*std::vector<std::vector<char>> board{
         {' ', ' ', 'd'}, 
         {' ', ' ', '#'}, 
         {' ', 'c', 'b'}
@@ -351,5 +352,14 @@ int main() {
     }
     else {
         std::cout << "Cannot be placed!!!" << std::endl;
-    }
+    }*/
+    std::vector<std::vector<int>> v{
+        {1,5},
+        {2,5},
+        {3,5},
+        {3,4},
+        {4,5}
+    };
+    std::vector<int> tm{1,2,3,4,5};
+    std::cout << solution.minimumTime(5, v, tm) << std::endl;
 }
