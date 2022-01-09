@@ -59,7 +59,8 @@
 //#include "avoid_flood_in_city.h"
 //#include "buddy_strings.h"
 //#include "check_if_word_can_be_placed_in_crossword.h"
-#include "parallel_courses_III.h"
+//#include "parallel_courses_III.h"
+#include "escape_the_ghosts.h"
 
 int main() {
     Solution solution;
@@ -353,7 +354,7 @@ int main() {
     else {
         std::cout << "Cannot be placed!!!" << std::endl;
     }*/
-    std::vector<std::vector<int>> v{
+    /*std::vector<std::vector<int>> v{
         {1,5},
         {2,5},
         {3,5},
@@ -361,5 +362,11 @@ int main() {
         {4,5}
     };
     std::vector<int> tm{1,2,3,4,5};
-    std::cout << solution.minimumTime(5, v, tm) << std::endl;
+    std::cout << solution.minimumTime(5, v, tm) << std::endl;*/
+
+    std::vector<std::vector<int>> v{
+        {1,0}
+    };
+    std::vector<int> target{2,0};
+    std::cout << solution.escapeGhosts(v, target) << std::endl;
 }
