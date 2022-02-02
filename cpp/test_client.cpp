@@ -60,7 +60,8 @@
 //#include "buddy_strings.h"
 //#include "check_if_word_can_be_placed_in_crossword.h"
 //#include "parallel_courses_III.h"
-#include "escape_the_ghosts.h"
+//#include "escape_the_ghosts.h"
+#include "directions_from_one_node_to_another.h"
 
 int main() {
     Solution solution;
@@ -364,9 +365,13 @@ int main() {
     std::vector<int> tm{1,2,3,4,5};
     std::cout << solution.minimumTime(5, v, tm) << std::endl;*/
 
-    std::vector<std::vector<int>> v{
+    /*std::vector<std::vector<int>> v{
         {1,0}
     };
     std::vector<int> target{2,0};
-    std::cout << solution.escapeGhosts(v, target) << std::endl;
+    std::cout << solution.escapeGhosts(v, target) << std::endl;*/
+
+    TreeNode* firstChild = new TreeNode(2);
+    TreeNode* root = new TreeNode(1, firstChild, nullptr);
+    std::cout << solution.getDirections(root, 2, 1) << std::endl;
 }
