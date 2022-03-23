@@ -62,7 +62,8 @@
 //#include "parallel_courses_III.h"
 //#include "escape_the_ghosts.h"
 //#include "directions_from_one_node_to_another.h"
-#include "minimum_cst_to_set_cooking_time.h"
+//#include "minimum_cst_to_set_cooking_time.h"
+#include "consecutive_characters.h"
 
 int main() {
     Solution solution;
@@ -376,5 +377,9 @@ int main() {
     TreeNode* root = new TreeNode(1, firstChild, nullptr);
     std::cout << solution.getDirections(root, 2, 1) << std::endl;*/
 
-    std::cout << solution.minCostSetTime(0, 1,2, 76) << std::endl;
+    //std::cout << solution.minCostSetTime(0, 1,2, 76) << std::endl;
+
+    std::string s{"leetcode"};
+    std::cout << s.length() << std::endl;
+    std::cout << solution.maxPower(s) << std::endl;
 }
