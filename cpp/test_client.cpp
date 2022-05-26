@@ -63,7 +63,8 @@
 //#include "escape_the_ghosts.h"
 //#include "directions_from_one_node_to_another.h"
 //#include "minimum_cst_to_set_cooking_time.h"
-#include "consecutive_characters.h"
+//#include "consecutive_characters.h"
+#include "interleaving_string.h"
 
 int main() {
     Solution solution;
@@ -379,7 +380,9 @@ int main() {
 
     //std::cout << solution.minCostSetTime(0, 1,2, 76) << std::endl;
 
-    std::string s{"leetcode"};
+    /*std::string s{"leetcode"};
     std::cout << s.length() << std::endl;
-    std::cout << solution.maxPower(s) << std::endl;
+    std::cout << solution.maxPower(s) << std::endl;*/
+
+    std::cout << solution.isInterleave("ab", "bc", "babc") << std::endl;
 }
