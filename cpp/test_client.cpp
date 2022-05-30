@@ -64,7 +64,8 @@
 //#include "directions_from_one_node_to_another.h"
 //#include "minimum_cst_to_set_cooking_time.h"
 //#include "consecutive_characters.h"
-#include "interleaving_string.h"
+//#include "interleaving_string.h"
+#include "regular-expression-matching.h"
 
 int main() {
     Solution solution;
@@ -384,5 +385,6 @@ int main() {
     std::cout << s.length() << std::endl;
     std::cout << solution.maxPower(s) << std::endl;*/
 
-    std::cout << solution.isInterleave("ab", "bc", "babc") << std::endl;
+    //std::cout << solution.isInterleave("ab", "bc", "babc") << std::endl;
+    std::cout << solution.isMatch("a", "a*..a*");
 }
