@@ -36,7 +36,8 @@
             "displayName": "TestsDebugx64Linux",
             "configurePreset": "LinuxConfigx64Debug",
             "output": {
-                "outputLogFile": "./CTest.log"
+                "outputLogFile": "./CTest.log",
+                "verbosity": "verbose"
             }
         }
     ]

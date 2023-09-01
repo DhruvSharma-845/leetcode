@@ -1,5 +1,6 @@
 add_executable(leetcode_ut 
     tests/hello_test.cpp
+    tests/valid_parentheses.cpp
 )
 target_include_directories(leetcode_ut PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/include
