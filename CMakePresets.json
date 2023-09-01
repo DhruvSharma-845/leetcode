@@ -1,0 +1,43 @@
+{
+    "version": 6,
+    "cmakeMinimumRequired": {
+      "major": 3,
+      "minor": 16,
+      "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "LinuxConfigx64Debug",
+            "displayName": "Linux Config for Debug x64",
+            "description": "Configure CMake for Linux Debug x64",
+            "generator": "Unix Makefiles",
+            "binaryDir": "${sourceDir}/buildsystem/x64/debug",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug"
+            },
+           "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Linux"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "Debugx64Linux",
+            "displayName": "Debugx64Linux",
+            "configurePreset": "LinuxConfigx64Debug",
+            "jobs": 4
+        }
+    ],
+    "testPresets": [
+        {
+            "name": "TestsDebugx64Linux",
+            "displayName": "TestsDebugx64Linux",
+            "configurePreset": "LinuxConfigx64Debug",
+            "output": {
+                "outputLogFile": "./CTest.log"
+            }
+        }
+    ]
+  }
