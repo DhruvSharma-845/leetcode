@@ -4,6 +4,7 @@ add_executable(leetcode_ut
     tests/partition_array_three_parts_equal_sum.cpp
     tests/insert_gcd_linked_list.cpp
     tests/keep_city_skyline.cpp
+    tests/move_all_balls_each_box.cpp
 )
 target_include_directories(leetcode_ut PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/include
