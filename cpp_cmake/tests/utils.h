@@ -1,9 +1,8 @@
-#include <gtest/gtest.h>
+#ifndef __UTILS_H__
+#define __UTILS_H__ 
+
 #include <vector>
 
-auto compareVectors(const std::vector<int>& actual, const std::vector<int>& expected) {
-    ASSERT_EQ(actual.size(), expected.size());
-    for(auto i = 0; i < expected.size(); ++i) {
-        EXPECT_EQ(actual[i], expected[i]);
-    }
-}
+auto compareVectors(const std::vector<int>& actual, const std::vector<int>& expected) -> void;
+
+#endif // __UTILS_H__

@@ -1,10 +1,12 @@
 add_executable(leetcode_ut 
+    tests/utils.cpp
     tests/hello_test.cpp
     tests/valid_parentheses.cpp
     tests/partition_array_three_parts_equal_sum.cpp
     tests/insert_gcd_linked_list.cpp
     tests/keep_city_skyline.cpp
     tests/move_all_balls_each_box.cpp
+    tests/minimum_operations_to_make_array_equal.cpp
 )
 target_include_directories(leetcode_ut PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/include
