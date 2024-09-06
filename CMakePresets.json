@@ -1,44 +1,44 @@
 {
     "version": 6,
     "cmakeMinimumRequired": {
-      "major": 3,
-      "minor": 16,
-      "patch": 0
+        "major": 3,
+        "minor": 16,
+        "patch": 0
     },
     "configurePresets": [
         {
-            "name": "LinuxConfigx64Debug",
-            "displayName": "Linux Config for Debug x64",
-            "description": "Configure CMake for Linux Debug x64",
+            "name": "DarwinConfigx64Debug",
+            "displayName": "Darwin Config for Debug x64",
+            "description": "Configure CMake for Darwin Debug x64",
             "generator": "Unix Makefiles",
             "binaryDir": "${sourceDir}/buildsystem/x64/debug",
             "cacheVariables": {
                 "CMAKE_BUILD_TYPE": "Debug"
             },
-           "condition": {
+            "condition": {
                 "type": "equals",
                 "lhs": "${hostSystemName}",
-                "rhs": "Linux"
+                "rhs": "Darwin"
             }
         }
     ],
     "buildPresets": [
         {
-            "name": "Debugx64Linux",
-            "displayName": "Debugx64Linux",
-            "configurePreset": "LinuxConfigx64Debug",
+            "name": "Debugx64Darwin",
+            "displayName": "Debugx64Darwin",
+            "configurePreset": "DarwinConfigx64Debug",
             "jobs": 4
         }
     ],
     "testPresets": [
         {
-            "name": "TestsDebugx64Linux",
-            "displayName": "TestsDebugx64Linux",
-            "configurePreset": "LinuxConfigx64Debug",
+            "name": "TestsDebugx64Darwin",
+            "displayName": "TestsDebugx64Darwin",
+            "configurePreset": "DarwinConfigx64Debug",
             "output": {
                 "outputLogFile": "./CTest.log",
                 "verbosity": "verbose"
             }
         }
     ]
-  }
+}
