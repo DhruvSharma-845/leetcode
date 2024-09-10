@@ -9,6 +9,7 @@ add_executable(leetcode_ut
     tests/minimum_operations_to_make_array_equal.cpp
     tests/maximum_score_words_created_by_letters.cpp
     tests/unique_paths_3.cpp
+    tests/build_matrix_with_conditions.cpp
 )
 target_include_directories(leetcode_ut PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/include
