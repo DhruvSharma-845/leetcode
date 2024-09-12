@@ -10,6 +10,7 @@ add_executable(leetcode_ut
     tests/maximum_score_words_created_by_letters.cpp
     tests/unique_paths_3.cpp
     tests/build_matrix_with_conditions.cpp
+    tests/reducing_dishes.cpp
 )
 target_include_directories(leetcode_ut PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/include
