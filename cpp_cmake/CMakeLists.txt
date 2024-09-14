@@ -12,6 +12,7 @@ add_executable(leetcode_ut
     tests/build_matrix_with_conditions.cpp
     tests/reducing_dishes.cpp
     tests/recover_tree_from_preorder.cpp
+    tests/n_queens_II.cpp
 )
 target_include_directories(leetcode_ut PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/include
