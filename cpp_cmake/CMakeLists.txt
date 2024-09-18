@@ -14,6 +14,7 @@ add_executable(leetcode_ut
     tests/recover_tree_from_preorder.cpp
     tests/n_queens_II.cpp
     tests/submatrices_that_sum_target.cpp
+    tests/minimum_flips_to_make_zero_matrix.cpp
 )
 target_include_directories(leetcode_ut PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/include

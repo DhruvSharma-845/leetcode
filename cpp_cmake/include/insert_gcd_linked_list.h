@@ -1,5 +1,6 @@
 #include <list_node.h>
 #include <algorithm>
+#include <numeric>
 
 using ListNode = GenericListNode<int>;
 
@@ -13,7 +14,7 @@ public:
         }
 
         while(nextNode != nullptr) {
-            int gcdValue = std::__gcd(current->val, nextNode->val);
+            int gcdValue = std::gcd(current->val, nextNode->val);
             current->next = new ListNode(gcdValue, nextNode);
             current = nextNode;
             nextNode = current->next;
