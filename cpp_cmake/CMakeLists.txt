@@ -17,6 +17,7 @@ add_executable(leetcode_ut
     tests/minimum_flips_to_make_zero_matrix.cpp
     tests/cherry_pickup_II.cpp
     tests/my_calendar_III.cpp
+tests/earliest_day_bloom.cpp
 )
 target_include_directories(leetcode_ut PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/include
