@@ -19,6 +19,7 @@ add_executable(leetcode_ut
     tests/my_calendar_III.cpp
 tests/earliest_day_bloom.cpp
 tests/minimum_increment_subarrays.cpp
+    tests/minimum_insertion_to_palindrome.cpp
 )
 target_include_directories(leetcode_ut PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/include
