@@ -1,5 +1,4 @@
 add_executable(leetcode_ut 
-    tests/utils.cpp
     tests/hello_test.cpp
     tests/valid_parentheses.cpp
     tests/partition_array_three_parts_equal_sum.cpp
@@ -20,6 +19,7 @@ add_executable(leetcode_ut
 tests/earliest_day_bloom.cpp
 tests/minimum_increment_subarrays.cpp
     tests/minimum_insertion_to_palindrome.cpp
+tests/n_queens.cpp
 )
 target_include_directories(leetcode_ut PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/include
