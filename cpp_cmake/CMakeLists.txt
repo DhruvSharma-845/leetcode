@@ -24,6 +24,7 @@ add_executable(leetcode_ut
     tests/filling_bookcase_shelves.cpp
     tests/grid_can_be_cut_into_sections.cpp
     tests/string_from_binary_tree.cpp
+    tests/find_champion_2.cpp
 )
 target_include_directories(leetcode_ut PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/include
