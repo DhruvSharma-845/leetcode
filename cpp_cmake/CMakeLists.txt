@@ -27,6 +27,7 @@ add_executable(leetcode_ut
     tests/find_champion_2.cpp
     tests/search_suggestion_system.cpp
     tests/reorder_routes_to_city_zero.cpp
+    tests/throne_inheritance.cpp
 )
 target_include_directories(leetcode_ut PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/include
