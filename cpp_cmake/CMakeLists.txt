@@ -30,6 +30,7 @@ add_executable(leetcode_ut
     tests/throne_inheritance.cpp
     tests/exclusive_time_of_functions.cpp
     tests/complete_binary_tree_inserter.cpp
+    tests/kth_largest_perfect_subtree.cpp
 )
 target_include_directories(leetcode_ut PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/include
