@@ -32,6 +32,7 @@ add_executable(leetcode_ut
     tests/complete_binary_tree_inserter.cpp
     tests/kth_largest_perfect_subtree.cpp
     tests/two_best_non_overlapping_events.cpp
+    tests/minimum_maximum_products.cpp
 )
 target_include_directories(leetcode_ut PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/include
