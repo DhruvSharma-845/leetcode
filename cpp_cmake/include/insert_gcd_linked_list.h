@@ -2,8 +2,6 @@
 #include <algorithm>
 #include <numeric>
 
-using ListNode = GenericListNode<int>;
-
 class Solution {
 public:
     ListNode* insertGreatestCommonDivisors(ListNode* head) {

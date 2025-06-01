@@ -1,5 +1,6 @@
 #pragma once
 
+
 template <typename T>
 struct GenericListNode {
     T val;
@@ -9,3 +10,5 @@ struct GenericListNode {
     GenericListNode(T x) : val(x), next(nullptr) {}
     GenericListNode(T x, GenericListNode<T> *next) : val(x), next(next) {}
 };
+
+using ListNode = GenericListNode<int>;

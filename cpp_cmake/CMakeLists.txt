@@ -34,6 +34,7 @@ add_executable(leetcode_ut
     tests/two_best_non_overlapping_events.cpp
     tests/minimum_maximum_products.cpp
     tests/smooth_descent_periods.cpp
+    tests/reverse_nodes_even_length_groups.cpp
 )
 target_include_directories(leetcode_ut PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/include
