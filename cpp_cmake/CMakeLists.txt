@@ -36,6 +36,7 @@ add_executable(leetcode_ut
     tests/smooth_descent_periods.cpp
     tests/reverse_nodes_even_length_groups.cpp
     tests/stone_game_VII.cpp
+    tests/rabbits_in_forest.cpp
 )
 target_include_directories(leetcode_ut PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/include
