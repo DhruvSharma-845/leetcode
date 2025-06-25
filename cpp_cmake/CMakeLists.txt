@@ -39,6 +39,7 @@ add_executable(leetcode_ut
     tests/rabbits_in_forest.cpp
     tests/maximum_target_nodes_II.cpp
     tests/put_marbels_in_bag.cpp
+    tests/visible_people_queue.cpp
 )
 target_include_directories(leetcode_ut PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/include
