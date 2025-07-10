@@ -41,6 +41,7 @@ add_executable(leetcode_ut
     tests/put_marbels_in_bag.cpp
     tests/visible_people_queue.cpp
     tests/minimum_cost_for_valid_path.cpp
+    tests/remove_edges_to_keep_graph_traversable.cpp
 )
 target_include_directories(leetcode_ut PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/include
